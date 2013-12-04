@@ -1,5 +1,6 @@
 define([
   './directives',
+  'd3'
 ],
 function(directives){
   'use strict';
