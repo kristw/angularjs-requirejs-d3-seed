@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <link rel='stylesheet' type="text/css" href="vendor/bootstrap-3.0.1/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="styles/main.css">
+      <title>Angularjs + Requirejs + d3 seed</title>
+  </head>
+  <body>
+    <div ng-controller='mainCtrl'>
+
+      <chart-form></chart-form>
+
+      <bar-chart width="options.width" height="options.height" data="data" hovered="onHover(args)"></bar-chart>
+
+      <p>
+        bar value: {{ barValue }}
+      </p>
+
+    </div>
+
+    <script data-main="scripts/main" src="vendor/requirejs-2.1.9/require.js"></script>
+  </body>
+</html>
