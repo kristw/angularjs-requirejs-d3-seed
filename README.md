@@ -1,6 +1,9 @@
 angularjs-requirejs-d3-seed
 ===========================
 
+See live demo at
+http://kristw.yellowpigz.com/demo/angularjs-requirejs-d3-seed/index.html
+
 This seed is a combination and modification from these examples:
 
 Angularjs + Requirejs
