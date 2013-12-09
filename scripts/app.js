@@ -3,6 +3,7 @@
  */
 define([
   'angular',
+  'angular-route',
 
   /*
    * Load angular modules
@@ -26,6 +27,7 @@ define([
   'use strict';
 
   return ng.module('app', [
+    'ngRoute',
     'app.controllers',
     'app.directives',
     'app.filters',

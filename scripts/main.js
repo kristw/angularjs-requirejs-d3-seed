@@ -3,7 +3,8 @@ requirejs.config({
   baseUrl: 'scripts',
   // Set paths
   paths:{
-    'angular':              ['../vendor/angular-1.0.8/angular.min'],
+    'angular':              ['../vendor/angular-1.2.4/angular.min'],
+    'angular-route':        ['../vendor/angular-1.2.4/angular-route.min'],
     'bootstrap':            ['../vendor/bootstrap-3.0.1/js/bootstrap.min'],
     'colorbrewer':          ['../vendor/colorbrewer/colorbrewer.v1.min'],
     'd3':                   ['../vendor/d3-3.3.6/d3.min'],
@@ -13,6 +14,7 @@ requirejs.config({
   // Set dependencies
   shim: {
     'angular':              {exports: 'angular'},
+    'angular-route':        ['angular'],
     'bootstrap':            ['jquery'],
     'd3':                   ['jquery']
   }
