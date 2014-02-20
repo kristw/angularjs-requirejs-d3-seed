@@ -20,9 +20,9 @@ define([
   'filters/filters',
   'directives/directives',
   // Custom modules
-  'controllers/mainCtrl',
-  'directives/barChart',
-  'directives/chartForm'
+  'controllers/main-controller',
+  'directives/barChart-directive',
+  'directives/chartForm-directive'
 ], function (ng) {
   'use strict';
 
