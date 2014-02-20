@@ -21,15 +21,13 @@ requirejs.config({
 });
 
 require([
-    'angular',
-    'app',
-    'routes'
-  ],
-  function(ng, app){
+  'app',
+  'routes'
+],
+function(app){
 
-    // Kickstart application
-    app.bootstrap();
+  // Kickstart application
+  app.bootstrap();
 
-  }
-);
+});
 
