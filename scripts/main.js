@@ -22,16 +22,13 @@ requirejs.config({
 
 require([
     'angular',
-    'domReady',
     'app',
     'routes'
   ],
-  function(ng, domReady, app){
+  function(ng, app){
 
     // Kickstart application
-    domReady(function (document) {
-      ng.bootstrap(document, ['app']);
-    });
+    app.bootstrap();
 
   }
 );

@@ -2,6 +2,7 @@
  * loads sub modules and wraps them up into the main module
  */
 define([
+  'domReady',
   'angular',
   'angular-route',
 
@@ -23,14 +24,26 @@ define([
   'controllers/main-controller',
   'directives/barChart-directive',
   'directives/chartForm-directive'
-], function (ng) {
+], function (domReady, ng) {
   'use strict';
 
-  return ng.module('app', [
+  var app = ng.module('app', [
     'ngRoute',
     'app.controllers',
     'app.directives',
     'app.filters',
     'app.services'
   ]);
+
+  // Kickstart application
+  function bootstrap(){
+    domReady(function (document) {
+      ng.bootstrap(document, ['app']);
+    });
+  }
+
+  return {
+    bootstrap: bootstrap,
+    getNgModule: function(){ return app; }
+  };
 });
