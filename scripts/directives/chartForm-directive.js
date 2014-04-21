@@ -2,7 +2,7 @@ define([
   './directives',
   'd3'
 ],
-function(directives){
+function(directives, d3){
   'use strict';
 
   directives.directive('chartForm', function(){

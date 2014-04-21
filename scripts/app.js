@@ -21,9 +21,17 @@ define([
   'filters/filters',
   'directives/directives',
   // Custom modules
-  'controllers/main-controller',
+  'controllers/sample-controller',
+
   'directives/barChart-directive',
-  'directives/chartForm-directive'
+  'directives/chartForm-directive',
+  'directives/sample-directive',
+  'directives/sampleChart-directive',
+
+  'services/sample-service',
+
+  'filters/ngFilterAdapter'
+
 ], function (domReady, ng) {
   'use strict';
 

@@ -1,7 +1,8 @@
 define([
   './directives',
+  'd3',
   'components/barChart'
-], function (directives, barChart) {
+], function (directives, d3, barChart) {
   'use strict';
   directives.directive('barChart', [function (){
     var chart = barChart();

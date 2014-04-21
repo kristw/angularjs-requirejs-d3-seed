@@ -6,22 +6,56 @@
       <link rel="stylesheet" type="text/css" href="styles/main.css">
       <title>Angularjs + Requirejs + d3 seed</title>
   </head>
-  <body>
-    <div ng-controller='mainCtrl'>
+  <body ng-controller="sampleCtrl">
 
-      <chart-form></chart-form>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
 
-      <bar-chart width="options.width" height="options.height" data="data" hovered="onHover(args)"></bar-chart>
+          <h1>Sample page</h1>
 
-      <p>
-        bar value: {{ barValue }}
-      </p>
+          <h3>Binding data + through filter</h3>
+          {{name | sampleFilter}}
 
-      <a href="https://github.com/kristw/angularjs-requirejs-d3-seed">view source</a>
+          <!-- test comment -->
+          <h3>Directive#1:</h3>
+          <div sample data="directiveData1"></div>
 
+          <!-- test comment -->
+          <h3>Directive#2:</h3>
+          <div sample data="directiveData2"></div>
+
+          <!-- test comment -->
+          <h3>Directive#3:</h3>
+          This one is a directive that wraps d3 component.
+          See "sampleChart-directive.js" and "sampleChart.js"
+          <div sample-chart data="chartData"></div>
+
+          <h3>Data (from service):</h3>
+          The data below is retrieved from sampleService (sample-service.js)
+          <pre>{{sampleData}}</pre>
+
+          <h3>Chart with binding</h3>
+          <div>
+
+            <chart-form></chart-form>
+
+            <bar-chart width="options.width" height="options.height" data="data" hovered="onHover(args)"></bar-chart>
+
+            <p>
+              bar value: {{ barValue }}
+            </p>
+
+            <a href="https://github.com/kristw/angularjs-requirejs-d3-seed">view source</a>
+
+          </div>
+
+        </div>
+      </div>
     </div>
 
-    <script src="vendor/requirejs-2.1.9/require.js"></script>
+    <script src="bower_components/requirejs/require.js"></script>
+    <script src="scripts/config.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
