@@ -23,9 +23,8 @@
   ],
   "dependencies": {
     "angular": "latest",
+    "angular-route": "latest",
     "d3": "latest",
-    "requirejs-domready": "latest",
-    "requirejs": "latest",
-    "angular-route": "~1.2.16"
+    "requirejs": "latest"
   }
 }

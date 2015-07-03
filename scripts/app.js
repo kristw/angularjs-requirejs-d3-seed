@@ -2,7 +2,6 @@
  * loads sub modules and wraps them up into the main module
  */
 define([
-  'domReady',
   'angular',
   'angular-route',
 
@@ -32,10 +31,10 @@ define([
 
   'filters/ngFilterAdapter'
 
-], function (domReady, ng) {
+], function (angular) {
   'use strict';
 
-  var app = ng.module('app', [
+  var app = angular.module('app', [
     'ngRoute',
     'app.controllers',
     'app.directives',
@@ -45,8 +44,8 @@ define([
 
   // Kickstart application
   function bootstrap(){
-    domReady(function (document) {
-      ng.bootstrap(document, ['app']);
+    angular.element(document).ready(function (document) {
+      angular.bootstrap(document, ['app']);
     });
   }
 
