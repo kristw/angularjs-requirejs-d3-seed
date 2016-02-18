@@ -1,0 +1,24 @@
+{
+  "name": "angularjs-requirejs-d3-seed",
+  "version": "0.1.0",
+  "description": "A seed project for using angularjs, requirejs and d3 in combination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristw/angularjs-requirejs-d3-seed.git"
+  },
+  "author": "Krist Wongsuphasawat <krist.wongz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kristw/angularjs-requirejs-d3-seed/issues"
+  },
+  "homepage": "https://github.com/kristw/angularjs-requirejs-d3-seed#readme",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-gh-pages": "~0.5.4",
+    "gulp-load-plugins": "~1.1.0"
+  }
+}
