@@ -13,6 +13,12 @@
 
           <h1>Sample page</h1>
 
+          mmmmm
+          <input type="text" ng-model="testVar">
+          {{testVar | number:2}}
+
+          <div ng-if="testVar=='haha'">hidden text</div>
+
           <h3>Binding data + through filter</h3>
 
           <input type="text" class="form-control" ng-model="value">
@@ -20,11 +26,11 @@
 
           <!-- test comment -->
           <h3>Directive#1:</h3>
-          <div sample data="directiveData1"></div>
+          <sample data="directiveData1"></sample>
 
           <!-- test comment -->
           <h3>Directive#2:</h3>
-          <div sample data="directiveData2"></div>
+          <sample data="directiveData2"></sample>
 
           <!-- test comment -->
           <h3>Directive#3:</h3>

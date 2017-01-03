@@ -7,6 +7,8 @@ return function(ngModule){
 
     console.log('$routeParams', $routeParams);
 
+    $scope.testVar = 'hahahaha';
+
     $scope.name = 'results page';
     $scope.value = 10;
     $scope.params = $routeParams;
@@ -29,6 +31,10 @@ return function(ngModule){
         $scope.barValue = d;
       });
     };
+
+    $scope.$watch('testVar', function(){
+      console.log('changed!');
+    });
 
   }]);
 };
